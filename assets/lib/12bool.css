@@ -1,7 +1,15 @@
 /* framework 12bool
 rilasciato il 25/09/2019 */
-
-
+.row {
+  width: 1070px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* colonne */
 
@@ -57,50 +65,50 @@ rilasciato il 25/09/2019 */
 /* offset */
 
 .col-offset-1 {
-  width: calc((100% / 12)* 1);
+  margin-left: calc((100% / 12)* 1);
   float: left;
 }
 .col-offset-2 {
-  width: calc((100% / 12)* 2);
+  margin-left: calc((100% / 12)* 2);
   float: left;
 }
 .col-offset-3 {
-  width: calc((100% / 12)* 3);
+  margin-left: calc((100% / 12)* 3);
   float: left;
 }
 .col-offset-4 {
-  width: calc((100% / 12)* 4);
+  margin-left: calc((100% / 12)* 4);
   float: left;
 }
 .col-offset-5 {
-  width: calc((100% / 12)* 5);
+  margin-left: calc((100% / 12)* 5);
   float: left;
 }
 .col-offset-6 {
-  width: calc((100% / 12)* 6);
+  margin-left: calc((100% / 12)* 6);
   float: left;
 }
 .col-offset-7 {
-  width: calc((100% / 12)* 7);
+  margin-left: calc((100% / 12)* 7);
   float: left;
 }
 .col-offset-8 {
-  width: calc((100% / 12)* 8);
+  margin-left: calc((100% / 12)* 8);
   float: left;
 }
 .col-offset-9 {
-  width: calc((100% / 12)* 9);
+  margin-left: calc((100% / 12)* 9);
   float: left;
 }
 .col-offset-10 {
-  width: calc((100% / 12)* 10);
+  margin-left: calc((100% / 12)* 10);
   float: left;
 }
 .col-offset-11 {
-  width: calc((100% / 12)* 11);
+  margin-left: calc((100% / 12)* 11);
   float: left;
 }
 .col-offset-12 {
-  width: calc((100% / 12)* 12);
+  margin-left: calc((100% / 12)* 12);
   float: left;
 }
