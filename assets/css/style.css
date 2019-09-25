@@ -1,0 +1,64 @@
+/* regole generali */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightblue;
+}
+
+[class*="row-"]::after,
+.row-5 [class*="col-"]::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-1 {
+  height: 50px;
+  text-align: center;
+}
+
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  height: 70px;
+}
+
+[class*="col-"]{
+  border: 1px solid black;
+  height: 100%;
+}
+
+.row-2 .col-12,
+.row-3 [class*="col-"],
+.row-4 [class*="col-"] {
+  position: relative;
+}
+
+.row-2 .col-12 p,
+.row-3 [class*="col-"] p,
+.row-4 [class*="col-"] p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.row-5 [class*="col-"] [class*="col-"] {
+  position: relative;
+  border: 0;
+  padding: 5px;
+  background-color: rgb(247, 241, 161);
+}
+
+.row-5 [class*="col-"] [class*="col-"] p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
