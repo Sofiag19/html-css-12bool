@@ -8,6 +8,8 @@
 
 .container {
   background-color: lightblue;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 [class*="row-"]::after,
@@ -18,7 +20,7 @@
 }
 
 .row-1 {
-  height: 50px;
+  height: 140px;
   text-align: center;
 }
 
@@ -26,7 +28,7 @@
 .row-3,
 .row-4,
 .row-5 {
-  height: 70px;
+  height: 200px;
 }
 
 [class*="col-"]{
@@ -36,13 +38,15 @@
 
 .row-2 .col-12,
 .row-3 [class*="col-"],
-.row-4 [class*="col-"] {
+.row-4 [class*="col-"],
+.row-5 [class*="col-"] [class*="col-"] {
   position: relative;
 }
 
 .row-2 .col-12 p,
 .row-3 [class*="col-"] p,
-.row-4 [class*="col-"] p {
+.row-4 [class*="col-"] p,
+.row-5 [class*="col-"] [class*="col-"] p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,15 +54,7 @@
 }
 
 .row-5 [class*="col-"] [class*="col-"] {
-  position: relative;
-  border: 0;
+  border: 1px solid white;
   padding: 5px;
-  background-color: rgb(247, 241, 161);
-}
-
-.row-5 [class*="col-"] [class*="col-"] p{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  background-color: rgb(102, 107, 232);
 }
