@@ -11,7 +11,7 @@ body {
 }
 
 .row {
-  height: 200px;
+  height: 100px;
 }
 
 [class*="col-"]{
@@ -30,7 +30,7 @@ body {
 
 /* regole specifiche */
 #small{
-  height: 140px;
+  height: 80px;
   text-align: center;
 }
 
@@ -47,8 +47,4 @@ body {
 #nested [class*="col-"] .row [class*="col-"] {
   background-color: rgb(102, 107, 232);
   border: 1px solid white;
-}
-
-[class*="col-offset-"]{
-  border: 0;
 }
